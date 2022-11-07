@@ -19,4 +19,4 @@ jobs:
           base_uri: https://eu.iam.checkmarx.net/
           cx_client_id: ${{ secrets.CLIENT_ID }}
           cx_client_secret: ${{ secrets.SECRET }}
-          --debug
+          additional_params: --debug
