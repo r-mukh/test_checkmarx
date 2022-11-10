@@ -29,10 +29,10 @@ jobs:
             scan create \
             -s . \
             --agent GitHub \
-            --project-name ${{ github.repository }} \
+            --project-name r-mukh/test_checkmarx \
             --branch ${GITHUB_REF##*/} \
-            --base-uri ${{ secrets.CX_BASE_URI }} \
-            --tenant ${{ secrets.CX_TENANT }} \
+            --base-uri https://eu.ast.checkmarx.net/ \
+            --tenant mollie-pov-d46gf \
             --client-id ${{ secrets.CX_CLIENT_ID }} \
             --client-secret ${{ secrets.CX_CLIENT_SECRET }} \
             --sca-resolver ./ScaResolver
