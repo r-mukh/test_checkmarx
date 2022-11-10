@@ -33,6 +33,6 @@ jobs:
             --branch ${GITHUB_REF##*/} \
             --base-uri https://eu.ast.checkmarx.net/ \
             --tenant mollie-pov-d46gf \
-            --client-id ${{ secrets.CX_CLIENT_ID }} \
-            --client-secret ${{ secrets.CX_CLIENT_SECRET }} \
+            --client-id ${{ secrets.CLIENT_ID }} \
+            --client-secret ${{ secrets.SECRET }} \
             --sca-resolver ./ScaResolver
